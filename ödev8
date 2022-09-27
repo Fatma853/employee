@@ -1,0 +1,18 @@
+CREATE TABLE employee(
+id INT,
+first_name VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+birthday DATE,
+email VARCHAR(100)
+);
+
+UPDATE employee
+SET first_name = 'Ahmet' ,
+last_name = 'Yılmaz' ,
+birthday = '1990-03-03'
+email = 'ahmetyılmaz@gmail.com'
+WHERE id = 11 ; 
+
+DELETE FROM employee
+WHERE id = 8;
+
